@@ -1,0 +1,434 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color:black;
+    
+}
+
+nav{
+    display: flex;
+    height: 90px;
+    width:1.1fr;
+    justify-content:center;
+    justify-content: space-between;
+    box-shadow:1px 1px 1px gray ;
+    background: rgb(7, 179, 236);
+    flex-wrap:nowrap;
+    border: none;
+    /* position: fixed; */
+    top: 2px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    top: 20px;
+
+}
+
+.logo{
+    align-items: center;
+    position: relative;
+    left: 70px;
+    top: 40px;
+    height: 90px;
+    align-self: center;
+}
+
+.search_box{
+   position: relative;
+   left: 200px;
+   margin-top: 10px;
+  
+}
+
+.search_box  :hover{
+    transform: scale(1.2);
+    background: #fff;
+}
+
+.search_box input{
+    position: relative;
+    height: 50px;
+    width: 30rem;
+    text-align: center;
+    border: none;
+    outline: none;
+    background: #fff;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight:bold;
+    border-radius: 10px;
+    /* bottom: -40px; */
+    top: -50px;
+}
+
+
+.right_navbr {
+  position: relative;
+  top: 30px;
+  font-size: 1.1rem;
+  
+ 
+  
+}
+
+ul{
+    display: flex;
+    margin-right:30px;
+   
+}
+.right_navbr ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+.right_navbr ul li a{
+    text-decoration: none;
+    margin: 10px;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    left: 50px;
+    
+    
+}
+
+.right_navbr ul li a:hover{
+    transform: scale(1.3);
+    background: #fff;
+    box-shadow: 2px 2px 2px;
+     color: black;
+}
+
+/* -----sidebar----- */
+
+.container_1{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    background-color: beige;
+    grid-template-columns: 1fr 1fr 1fr 1000px ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1000px;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin: 20px;
+    background: 100vh;
+    
+}
+
+.grid_item{
+    background-color: #fff;
+    box-shadow:3px 3px 3px 5px gray ;
+    border-radius: 20px;
+   
+}
+
+#grid_1{
+    font-size: large;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    height: 700px;
+    width: 490px;
+    position: fixed;
+}
+.in_fo{
+    font-weight: bold;
+    line-height: 2rem;
+    margin-top: 50px;
+    padding: 20px;
+}
+#grid_1 img{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 200px;
+}
+#grid_1 .logo {
+    display: grid;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border:5px solid #fff;
+    position: absolute;
+    bottom: 0;
+    top: 150px;
+    
+}
+
+.in_fo ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+   
+}
+
+.in_fo ul li{
+    list-style: none;
+}
+
+.in_fo ul span{
+    float: right;
+    color: blue;
+}
+
+#verticle_line{
+    width: 3px;
+    height:70px ;
+    background-color: silver;
+    margin-left:50% ;
+    margin-top: 5px;
+}
+
+
+/* sidebar end */
+#grid_2{
+    grid-column-start: 1;
+    grid-row-end: 5;
+    /* position:absolute; */
+    /* margin-top: 250px; */
+    /* top: -75rem; */
+    width: 490px;
+   
+}
+
+#grid_2 ul{
+    flex-direction: column;
+    padding: 10px;
+}
+
+#grid_2 ul li{
+    list-style: none;
+    padding: 10px;
+}
+#Groups{
+    padding-top: 20px;
+}
+
+/* sidebar 2  end*/
+
+#grid_3{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-color: #fff;
+    width: 1000px ;
+    height: 180px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    left: 550px;
+    padding: 20px;
+    position: fixed;
+}
+
+#grid_3>img{
+     height: 90px;
+     width: 90px;
+     border: 3px solid rgb(22, 21, 21);
+     border-radius: 50%;
+}
+
+#grid_3 input{
+   position:relative;
+   top: -30px;
+   left: 20px;
+   width: 700px;
+   height: 70px;
+   border-color: 5px silver ;
+   outline: none;
+   border-radius: 30px;
+  font-size: large;
+  font-weight: bold;
+}
+#grid_3 ul li{
+    position:relative;
+    list-style: none;
+    padding: 20px;
+    margin: 20px;
+    right: 20px;
+    top: -50px;
+    margin-left: 20px;
+}
+#grid_3 ul span{
+    padding: 0;
+    font-size: large;
+    position: relative;
+    top: 0;
+}
+
+#grid_3 input :hover{
+    transform: scale(1.5);
+    background: #d29051;
+    box-shadow: 2px 2px 2px;
+    cursor: pointer;
+}
+/* <!-- main start --> */
+#grit_4{
+    grid-row-start:2 ;
+    grid-row-end: 6;
+    background-color:#fff;
+    position:relative;
+    width: 1100px;
+    justify-content: center;
+    top: -27rem;
+    background: scroll;
+}
+
+
+
+#grit_4 img{
+    width: 100%;
+}
+
+#user_1 img{
+    width: 60px;
+    height: 60px;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+.User{
+    padding: 20px;
+}
+
+#name{
+    display: flex;
+    position:absolute;
+    top: 30px;
+    left: 7rem;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#grit_4> p{
+    font-size: 1.5rem;
+    margin-left:20px ;
+    margin-bottom: 10px;
+    
+}
+.info p{
+    font-size: 1.6rem;
+    
+}
+/* second */
+#user_2 img{
+    width: 60px;
+    height: 60px;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+#namejk span{
+    display: flex;
+    position:absolute;
+    top: 63rem;
+    left: 7rem;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* three */
+#user_3 img{
+    width: 60px;
+    height: 60px;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+.theree #shaikh >span{
+    display: flex;
+    position:absolute;
+    top: 124rem;
+    left: 7rem;
+    font-weight: bold;
+    font-size: 25px;
+}
+.theree P{
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+
+/* six layout */
+#grid_6{
+    position:absolute;
+    width: 400px;
+    justify-self: end;
+    position: fixed;
+}
+
+#grid_6 h1{
+    padding: 20px;
+}
+
+#grid_6 h1 h3{
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight:bolder;
+}
+#grid_6 p{
+    font-weight: bolder;
+    font-weight: 1.4rem;
+}
+
+#grid_6 a{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 30%;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: blue;
+}
+
+.flex {
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#grid_6{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
